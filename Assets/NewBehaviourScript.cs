@@ -103,9 +103,13 @@ public class NewBehaviourScript : MonoBehaviour
             }
         }
 
-        for (int count = 0; count < 10; count++) {
+        for (int i = 0; i < 10; i++) {
             health++;
             Debug.Log("붕대로 치료 중..." + health);
+        }
+
+        foreach (string monster in monsters) {
+            Debug.Log("이 지역에 있는 몬스터: " + monster);
         }
     }
 }
